@@ -6,11 +6,13 @@
 
     snowfall-lib.url = "github:snowfallorg/lib";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
+
+    sops-nix.url = "github:Mic92/sops-nix";
   };
 
   outputs =
     inputs:
-    inputs.snowfall-lib.mkFlake {
+      inputs.snowfall-lib.mkFlake {
       inherit inputs;
 
       src = ./.;
