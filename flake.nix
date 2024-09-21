@@ -14,6 +14,14 @@
       inherit inputs;
 
       src = ./.;
+
+      snowfall = rec {
+        namespace = "caprinix";
+
+        meta = {
+          name = namespace;
+          title = namespace;
+        };
+      };
     };
 }
-  
