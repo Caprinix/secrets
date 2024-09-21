@@ -1,0 +1,10 @@
+keys:
+  - &master age14a3eqgd73w6v5pxaskqhfuhjz3szsveqpes653j79kea3np2lqgqp3sqp9
+  - &systems:
+    - &wandering-spinny-corner age1e5tz4ennmuwx9tgdkrnax4722hw4hwsawqr5u766t5t0mk6nvepqgj5ud4
+creation_rules:
+  - path_regex: systems/x86_64-linux/wandering-spinny-corner/*
+    key_groups:
+      - age:
+        - *master
+        - *wandering-spinny-corner
